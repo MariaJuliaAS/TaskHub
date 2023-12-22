@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <!--Evitar dar zoom nos inputs em iphone-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-sclale=1.0, user-scalable=no">
+    <meta name="HandheldFriendly" content="true">
+    <title>TaskHUB</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans&family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <main class="container">
+        <section id="task" class="task">
+            <div id="contentTask" class="contentTask">
+                <ul>
+
+                </ul>
+            </div>
+        </section>
+
+        <section class="addTask">
+            <div class="content">
+                <div class="text">
+                    <h1>TaskHUB</h1>
+                    <p>Seu hub central para organização diária. Gerencie suas tarefas com facilidade e eficiência.</p>
+                </div>
+
+                <div class="inputTask">
+                    <input type="text" id="inputTask" placeholder="Quais as tarefas de hoje?">
+                    <button type="button" onclick="addTask()">Adicionar</button>
+                </div>
+                
+                <div class="inputSearch">
+                    <input type="text" id="inputSearch" placeholder="Pesquisar...">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

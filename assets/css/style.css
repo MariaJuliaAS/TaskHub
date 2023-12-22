@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    background-color: var(--background);
+    font-family: 'Roboto', sans-serif;
+    --background: #0F0E17;
+    --text: #A7A9BE;
+    --button: #FF8906;
+    --textButton: #FFFFFE;
+    --input: #d9d9d9;
+}
+.container{
+    display: flex;
+}
+.addTask, .task{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+.addTask .text h1, .addTask .text p{
+    color: var(--text);
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: .5rem;
+}
+.addTask .text h1{font-size: 78px;}
+.addTask .text p{font-size: 20px; font-style: italic;}
+.addTask .inputTask{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+.addTask .inputTask input, .addTask .inputTask button, .inputSearch input{
+    border-radius: 7px;
+    height: 3.1rem;
+    border: none;
+    margin-bottom: 1rem;
+}
+.addTask .inputTask input, .inputSearch input{
+    background-color: var(--input);
+    width: 39.5rem;
+    padding-left: 1rem;
+}
+.addTask .inputTask input::placeholder, .inputSearch input::placeholder{
+    font-size: 18px;
+    color: #808080;
+}
+.addTask .inputTask button{
+    background-color: var(--button);
+    color: var(--textButton);
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 10.6rem;
+    margin-left: 1rem;
+    transition: 1s;
+}
+.addTask .inputTask button:hover{
+    width: 9.6rem;
+    transition: 1s;
+}
+.contentTask{
+    background-color: #fff;
+    height: 50rem;
+    width: 55em;
+    border-radius: 7px;
+    display: flex;
+    max-width: 55rem;
+    overflow-y: auto;
+}
+.contentTask ul{
+    margin: 1rem 2rem;
+    list-style-type: none;
+    font-size: 18px;
+}
+.contentTask ul li{margin: .7rem 0;}
+.contentTask input{margin-right: 1rem;}
+.contentTask button{
+    background-color: var(--button);
+    padding: .3rem .9rem;
+    border: none;
+    margin: 0 .5rem;
+    border-radius: 7px;
+    font-weight: bold;
+    color: var(--textButton);
+    cursor: pointer;
+}
+.inputSearch input{
+    width: 51rem;
+}
+
+@media screen and (max-width: 1370px){
+    .contentTask{
+        height:37rem;
+        width: 37em;
+    }
+    .addTask .text {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .addTask .text h1{font-size: 65px; margin-top: 2rem;}
+    .addTask .text p{max-width: 450px;}
+    .addTask .inputTask input{width: 25rem;}
+    .addTask .inputTask button{width: 7rem; font-size: 16px;}
+    .addTask .inputSearch input{width: 39em;} 
+    .addTask .inputTask button:hover{width: 6rem;}
+}
+@media screen  and (max-width: 1140px){
+    .container{flex-direction: column-reverse;}
+}
+@media screen and (max-width: 650px){
+    .contentTask{
+        height:32rem;
+        width: 29rem;
+    }
+    .addTask .text h1{font-size: 57px;}
+    .addTask .inputTask input{width: 23rem;}
+    .addTask .inputTask button{width: 5rem; font-size: 12px;}
+    .addTask .inputSearch input{width: 35em;} 
+    .addTask .inputTask button:hover{width: 5.5rem;}
+}
