@@ -115,14 +115,19 @@ html{
 @media screen  and (max-width: 1140px){
     .container{flex-direction: column-reverse;}
 }
-@media screen and (max-width: 650px){
+@media screen and (max-width: 450px){
     .contentTask{
         height:32rem;
-        width: 29rem;
+        width: 23rem;
     }
-    .addTask .text h1{font-size: 57px;}
-    .addTask .inputTask input{width: 23rem;}
-    .addTask .inputTask button{width: 5rem; font-size: 12px;}
-    .addTask .inputSearch input{width: 35em;} 
+    .addTask .text h1{font-size: 50px;}
+    .addTask .text p{max-width: 370px; font-size: 16px;}
+    .addTask .inputTask input{width: 17rem; height: 2.5rem;}
+    .addTask .inputTask button{
+        width: 5rem; 
+        height: 2.5rem; 
+        font-size: 12px;
+    }
+    .addTask .inputSearch input{width: 27.5em; height: 2.5rem;} 
     .addTask .inputTask button:hover{width: 5.5rem;}
 }
