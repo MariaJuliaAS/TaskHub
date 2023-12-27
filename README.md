@@ -5,7 +5,7 @@
 
 O **TaskHUB** fornece aos usuários uma ferramenta simples e eficaz para gerenciar suas tarefas diárias.
 
-## 🔥 Introdução
+## 🔥 Funcionalidades
 
 - **Adicionar Tarefas:** Utilize o campo de entrada "Quais as tarefas de hoje?" na seção "Adicionar Tarefas" para inserir novas tarefas. Clique no botão "Adicionar" para incluí-las na lista.
 
